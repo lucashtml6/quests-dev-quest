@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quest HTML+CSS+JS Intermediário</title>
+
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="content">
+        <h1>ficou com alguma dúvida? <br> nos mande uma mensagem!</h1>
+
+        <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+      </div>
+
+      <form class="form" id="form">
+        <div class="input-text">
+          <div class="form-control">
+            <input type="text" name="nome" id="nome" placeholder="Nome completo *" class="campo">
+            <small class="msg-campo-obrigatorio">campo obrigatório</small>
+          </div>
+
+          <div class="form-control">
+            <input type="text" name="email" id="email" placeholder="Email *" class="campo">
+            <small class="msg-campo-obrigatorio">campo obrigatório</small>
+          </div>
+
+          <div class="form-control">
+            <input type="text" name="telefone" id="telefone" placeholder="Telefone *" class="campo">
+            <small class="msg-campo-obrigatorio">campo obrigatório</small>
+          </div>
+        </div>
+
+        <div class="form-control">
+          <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem *" class="campo"></textarea>
+          <small class="msg-campo-obrigatorio">campo obrigatório</small>
+        </div>
+
+        <span>* campos obrigatórios</span>
+
+        <input type="submit" id="btn-enviar"></input>
+      </form>
+    </main>
+
+    <script src="src/js/index.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  background: url(../img/bg-repeat.jpg);
+  background-size: contain;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Roboto';
+  gap: 60px;
+  padding: 20px;
+}
+
+.content {
+  flex: 0 1 300px;
+}
+
+.content > h1,
+.content > p {
+  color: #fff;
+}
+
+.content > h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 11px;
+}
+
+.content > p {
+  font-size: 1.5rem;
+}
+
+.form {
+  background-color: #fff;
+  padding: 20px;
+  width: 340px;
+}
+
+.form > * {
+  display: block;
+}
+
+.form .input-text .campo {
+  height: 35px;
+  padding-left: 10px;
+  transition: .2s ease-out;
+}
+
+.form .form-control {
+  margin-bottom: 6px;
+}
+
+.form .form-control > small {
+  font-size: 1rem;
+  visibility: hidden;
+}
+
+.form .input-text .campo:first-child {
+  margin-top: 0;
+}
+
+.form #mensagem {
+  padding: 8px 10px;
+  font-family: 'Roboto';
+  height: 12rem;
+}
+
+.form .campo {
+  width: 100%;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.form .input-text input::placeholder,
+.form textarea::placeholder {
+  color: #A8A8A8;
+}
+
+.form > span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 7px;
+}
+
+.form #btn-enviar {
+  width: 100%;
+  background-color: #3CCC87;
+  color: #fff;
+  padding: 12px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background .3s ease-in-out;
+}
+
+.form #btn-enviar:hover {
+  background-color: #27a367;
+}
+
+
+/* Erro e Sucesso*/
+.form-control.sucesso > .campo {
+  border: #3CCC87 solid 2px;
+}
+
+.form-control.erro > .campo {
+  border: #fa2d2d solid 2px;
+}
+
+.form-control.erro > small {
+  visibility: visible;
+  color: #fa2d2d;
+}
