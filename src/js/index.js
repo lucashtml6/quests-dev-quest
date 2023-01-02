@@ -16,7 +16,7 @@ form.addEventListener("submit", (e) => {
 });
 
 input.forEach(campo => {
-  campo.addEventListener("change", () => {
+  campo.addEventListener("input", () => {
     if(campo.parentElement.classList.contains("erro")) {
       campo.parentElement.classList.remove("erro");
     }
